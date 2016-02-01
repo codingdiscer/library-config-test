@@ -33,10 +33,11 @@ What I'm missing is what I'm doing wrong.
 
 
 
-The challenge
+UPDATE - problem solved!!
 ====
 
+I now understand the problem and the solution.  The problem is that I didn't have an annotation that tied the @Component to the configuration file.  The solution is **@EnableConfigurationProperties** needs to be placed on a **@Configuration** class, and the **@EnableConfigurationProperties** then points to the **@Component** class.
 
-I challenge you guys to figure out what I'm doing wrong.  I'll buy your first (and likely more) beer when you solve this seemingly simple problem.
+Basically, just having the @Component/@ConfigurationProperties just declares what properties to set, but it doesn't actually cause the component to be loaded by the application context loader (that's what @EnableConfigurationProperties does).
 
-The goal is to get the one test case to pass.
+Also, I was able to remove the @IntegrationTest annotation from the test class, as I don't understand yet what that does, but it is not needed in this context.

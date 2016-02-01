@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component
  * the declared properties from the superclass.
  */
 @Component
-@ConfigurationProperties(prefix = 'dan')
+@ConfigurationProperties(prefix = 'car.dan')
 class DanCarProperties extends CarProperties {
     // just inherit all the properties from CarProperties
 }

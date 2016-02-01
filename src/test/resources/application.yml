@@ -3,8 +3,8 @@
 
 ---
 
-spring:
-    profiles: ci
+#spring:
+#    profiles: ci
 
 
 car :
