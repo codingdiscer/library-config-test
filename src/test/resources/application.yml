@@ -1,0 +1,23 @@
+
+
+
+---
+
+spring:
+    profiles: ci
+
+
+car :
+    dan :
+        make: nissan
+        model: altima
+        color: tan
+        otherProperties :
+            trunkContents: disc golf stuff
+            comfortablySeats: 4
+    noelle :
+        make: acura
+        model: tsx
+        color: blue-gray-silver
+        otherProperties:
+            seatMaterial: leather
