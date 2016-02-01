@@ -15,7 +15,6 @@ import org.springframework.stereotype.Component
  */
 @Component
 @ConfigurationProperties(prefix = 'dan')
-@Data
 class DanCarProperties extends CarProperties {
     // just inherit all the properties from CarProperties
 }
